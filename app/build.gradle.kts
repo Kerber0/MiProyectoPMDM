@@ -69,6 +69,21 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
+
+    // Núcleo de CameraX y back‑end de Camera2
+    implementation(libs.androidx.camera.core)
+    implementation(libs.androidx.camera.camera2)
+    // Gestiona el ciclo de vida para que el uso de la cámara se vincule al LifecycleOwner
+    implementation(libs.androidx.camera.lifecycle)
+    // Vistafinder nativa para Compose (SurfaceRequest)
+    implementation(libs.androidx.camera.compose)
+    // Librería de permisos de Accompanist
+    implementation(libs.accompanist.permissions)
+
+
+    //
     implementation(libs.coil.compose)
+
+
 
 }
