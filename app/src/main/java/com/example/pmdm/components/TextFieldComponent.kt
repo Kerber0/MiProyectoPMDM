@@ -1,3 +1,5 @@
+package com.example.pmdm.components
+
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -13,7 +15,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.pmdm.Components.TextComponent
 
 /**
  * Componente de campo de texto personalizado.
@@ -38,8 +39,8 @@ import com.example.pmdm.Components.TextComponent
 fun TextFieldComponent(
     info: String,
     color: Color,
-    placeholderText: (@Composable () -> Unit )? = null
-){
+    placeholderText: (@Composable () -> Unit)? = null,
+) {
     var text by remember { mutableStateOf("") }
 
     TextField(
@@ -54,7 +55,8 @@ fun TextFieldComponent(
         },
         shape = RoundedCornerShape(10.dp),
         modifier = Modifier
-            .fillMaxWidth().padding(4.dp)
+            .fillMaxWidth()
+            .padding(4.dp)
     )
 }
 
@@ -67,6 +69,6 @@ fun TextFieldComponent(
  */
 @Preview
 @Composable
-fun PreviewTextField(){
+fun PreviewTextField() {
     TextFieldComponent(info = "prueba", Color.Black)
 }

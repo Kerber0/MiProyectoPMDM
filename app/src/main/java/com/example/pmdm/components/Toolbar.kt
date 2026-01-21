@@ -1,4 +1,4 @@
-package com.example.pmdm.Components
+package com.example.pmdm.components
 
 import android.content.res.Configuration
 import androidx.compose.foundation.Image
@@ -41,7 +41,7 @@ import com.example.pmdm.ui.theme.neonTextGradient
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Toolbar(
-    onSearchClick: () -> Unit
+    onSearchClick: () -> Unit,
 ) {
     // Detecta si el tema actual es oscuro (por compatibilidad visual)
     isSystemInDarkTheme()

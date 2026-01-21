@@ -1,4 +1,4 @@
-package com.example.pmdm.Components
+package com.example.pmdm.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
@@ -45,7 +45,7 @@ import com.example.pmdm.model.CardConfig
  */
 @Composable
 fun ProfileCard(
-    cardConfig: com.example.pmdm.model.CardConfig,
+    cardConfig: CardConfig,
     modifier: Modifier = Modifier
 ) {
     Card(
